@@ -318,6 +318,94 @@ strong {
   line-height: 30px;
 }
 
+:root {
+  --h1-font-size: 32px;
+  --h2-font-size: 30px;
+  --h3-font-size: 24px;
+  --h4-font-size: 22px;
+  --h5-font-size: 20px;
+  /* Add other font sizes if needed */
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --h1-font-size: 26px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --h4-font-size: 18px;
+    --h5-font-size: 16px;
+    /* Adjust other font sizes accordingly */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for small devices (phones) */
+@media only screen and (max-width: 600px) and (max-width: 768px) {
+  .navbar-brand img.logo {
+      /* Adjust logo size for mobile */
+      max-width: 100px; /* Example size, adjust as needed */
+      height: auto;
+  }
+  .navbar-brand .navbar-text {
+      /* Adjust text size for mobile */
+      font-size: 12px; /* Example size, adjust as needed */
+  }
+  .navbar-brand .navbar-text .navbar-hape,
+  .navbar-brand .navbar-text .navbar-description {
+      /* Adjust heading sizes for mobile */
+      font-size: 14px; /* Example size, adjust as needed */
+  }
+  .section-padding .featured-block {
+    /* Make each block take full width, stacked vertically */
+    width: 100%;
+    margin-bottom: 15px; /* Add some space between the blocks */
+}
+
+.section-padding .featured-block img {
+    /* Adjust image size */
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+}
+
+.section-padding .featured-block-text {
+    /* Adjust text size for better readability */
+    font-size: 10px; /* Adjust as needed */
+}
+.about-section .col-md-3, .about-section .col-lg-3, .about-section .col-6 {
+  /* Make each block take full width on small screens */
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center; /* Center text */
+}
+
+.about-section .about-image {
+    /* Adjust image size and centering */
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensures that margin auto is effective for centering */
+}
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-hape {
+      font-size: 35px; /* Adjust this value as needed */
+  }
+}
+
+
+
+.container-class { /* Replace with your specific class */
+  width: 100%;
+  max-width: 1200px; /* Adjust as per your design */
+  margin: 0 auto;
+}
+
 
 /*---------------------------------------
   AVATAR IMAGE - TESTIMONIAL, AUTHOR               
@@ -1764,3 +1852,35 @@ blockquote::before {
   }
 }
 
+
+/* Example Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .header, .main, .footer {
+        padding: 20px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .header, .main, .footer {
+        padding: 30px;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+    .header, .main, .footer {
+        padding: 40px;
+    }
+}
