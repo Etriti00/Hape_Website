@@ -17,7 +17,7 @@
 
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
 
-        <!-- Hotjar Tracking Code for https://www.hape-kosovo.eu/ -->
+<!-- Hotjar Tracking Code for https://www.hape-kosovo.eu/ -->
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -108,47 +108,70 @@
         </div>
     </div>
 </nav>
+
         <main>
 
+            <section class="news-detail-header-section text-center">
+                <div class="section-overlay"></div>
 
-            <section class="news-section section-padding">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-7 col-12">
-                            <div class="news-block">
-                                <div class="news-block-top">
-                                    <img src="images/news/Steering_Comitee1.jpg" class="news-image img-fluid" alt="">
-
-                                    <div class="news-category-block">
-                                        <a href="#" class="category-block-link">
-                                            Event
-                                        </a>
-
-                                        <a href="#" class="category-block-link">
-                                            Meeting
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="news-block-info">
-                                    <div class="d-flex mt-2">
-                                    <div class="news-block-date">
-                    
-                                    </div>
-                                 </div>
-                                </div>
-
-                                <div class="news-block-title mb-2">
-                                    <h4>1<sup>st</sup> Steering Committee - July 19<sup>th</sup> 2023</h4>
-                                </div>
-
-                                    <div class="news-block-body">
-                                        <p style="color: #001489; font-size: 18px; font-weight: bold;">The HAPE project organized a steering committee (SC) on the 19th of July 2023. This technical committee presented to the main beneficiaries of the project, MIA, Kosovo Police (KP), Special Prosecution of the Republic of Kosovo (SPRK), Police Inspectorate of Kosovo (PIK), Kosovo Academy of Public Safety (KAPS) and Kosovo Forensic Agency (KFA), the action plan for the next 3 years, in strategic and operational support. According to multidisciplinary and cross-functional approach in many actions of the project, the support will also involve the Ministry of Justice (MJ), the Financial Intelligence Unit (FIU), Kosovo Customs, the Tax Administration of Kosovo, and other relevant institutions. Regular SC will be held every four months to verify the achievements of the outputs and mandatory results and discuss future actions to be undertaken in the next following four months.</p>
+                        <div class="col-lg-12 col-12">
+                            <h1 class="text-white">News</h1>
+                        </div>
 
                     </div>
                 </div>
             </section>
+
+            <section class="news-section section-padding"style="padding-top: 30px;">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="news-block-title mb-2" style="color: #001489;">
+                            <h2>SUPPORT PROVIDED BY HAPE PROJECT<br><u>2024</u></h2>
+                        </div>
+
+                        <div class="news-block-title mb-2">
+                            <h4>- Accommodation of the Forensic team of the Kosovo Police for a meeting on organized crime cases, in Tirana with the Albanian State Police.</h4>
+                        </div>
+                        
+                        
+                            </div>
+
+                    
+                </div>
+
+            </section>
+
+              <!-- Add a navigation section with page numbers -->
+    <div class="pagination">
+        <button class="pagination-button active" onclick="changePage(1)">1</button>
+        <button class="pagination-button" onclick="changePage(2)">2</button>
+        <!-- Add more buttons as needed -->
+    </div>
+
+    <!-- Your existing scripts and footer content -->
+
+    <script>
+        // JavaScript function to handle page changes
+        function changePage(pageNumber) {
+            // Update the active button
+            const buttons = document.querySelectorAll('.pagination-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            buttons[pageNumber - 1].classList.add('active');
+
+            // Use window.location.href to navigate to the desired URL
+            if (pageNumber === 1) {
+                window.location.href = 'news-detail.html'; // Replace 'page1.html' with the actual URL for page 1
+            } else if (pageNumber === 2) {
+                window.location.href = 'news-detail-1.html'; // Replace 'page2.html' with the actual URL for page 2
+            }
+            // Add more conditions for additional pages as needed
+        }
+    </script>
+
         </main>
 
         <footer class="site-footer" id="site-footer">
@@ -207,7 +230,11 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-md-7 col-12">
-                            <p class="copyright-text mb-0">Copyright ©  <a href="#">HAPE -</a> Home Affairs Programme of European Union in Kosovo
+                            <p class="copyright-text mb-0"> - This video/film/recording/publication  was produced with the financial support of the European Union. Its contents are the sole responsibility of XXXX and do not necessarily reflect the views of the European Union.<br>
+
+                                - Ky video/film/incizim/publikim është prodhuar me mbështetjen financiare të Bashkimit Evropian. Përmbajtja e tij është përgjegjësi e vetme e XXX dhe nuk pasqyron domosdoshmërisht pikëpamjet e Bashkimit Evropian.<br>
+                                
+                                - Ovaj video/film/snimak/publikaciJa je proizveden/a uz finansijsku podršku Evropske unije. Njegov sadržaj je isključiva odgovornost XXX i nužno ne odražava stavove Evropske unije.
                         </div>
                         
                         <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
