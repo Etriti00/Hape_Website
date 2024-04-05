@@ -1104,6 +1104,77 @@ blockquote::before {
 }
 
 
+
+.vacancy-section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* Adjust the color as needed */
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.vacancies-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.vacancy-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vacancy-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.vacancy-item:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+.vacancy-item h3,
+.vacancy-item p {
+  text-align: left; /* Position text to the left */
+}
+
+.vacancy-item h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vacancy-item p {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.opportunity-label {
+  color: blue;
+  float: right;
+  font-weight: bold;
+}
+
+
+.recruitment-section {
+  max-width: 1300px;
+  margin: 0 auto; /* Center the section horizontally */
+  text-align: left; /* Align text to the left */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+
+
+
+
+
 /*---------------------------------------
   TESTIMONIAL CAROUSEL              
 -----------------------------------------*/
