@@ -103,7 +103,7 @@
                         News
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="news-detail-3.html">All News</a></li>
+                        <li><a class="dropdown-item" href="news-detail-4.html">All News</a></li>
                         <li><a class="dropdown-item" href="news-detail-2.html">Vacancies</a></li>
                         <!-- Add more categories as needed -->
                     </ul>
@@ -787,13 +787,11 @@ This activity reflects HAPE’s continued commitment to strengthening operationa
 
               <!-- Add a navigation section with page numbers -->
     <div class="pagination">
-        <button class="pagination-button active" onclick="changePage(1)">1</button>
-        <button class="pagination-button" onclick="changePage(2)">2</button>
+        <button class="pagination-button" onclick="changePage(1)">1</button>
+        <button class="pagination-button active" onclick="changePage(2)">2</button>
         <button class="pagination-button" onclick="changePage(3)">3</button>
-        <!-- Add more buttons as needed -->
+        <button class="pagination-button" onclick="changePage(4)">4</button>
     </div>
-
-    <!-- Your existing scripts and footer content -->
 
     <script>
         // JavaScript function to handle page changes
@@ -803,16 +801,15 @@ This activity reflects HAPE’s continued commitment to strengthening operationa
             buttons.forEach(button => button.classList.remove('active'));
             buttons[pageNumber - 1].classList.add('active');
 
-            // Use window.location.href to navigate to the desired URL
             if (pageNumber === 1) {
-                window.location.href = 'news-detail-3.html'; // Replace 'page1.html' with the actual URL for page 1
+                window.location.href = 'news-detail-4.html'; // 2026
             } else if (pageNumber === 2) {
-                window.location.href = 'news-detail-1.html'; // Replace 'page2.html' with the actual URL for page 2
+                window.location.href = 'news-detail-3.html'; // 2025
+            } else if (pageNumber === 3) {
+                window.location.href = 'news-detail-1.html'; // 2024
+            } else if (pageNumber === 4) {
+                window.location.href = 'news-detail.html'; // 2023
             }
-            else if (pageNumber === 3) {
-                window.location.href = 'news-detail.html'; // Replace 'page2.html' with the actual URL for page 2
-            }
-            // Add more conditions for additional pages as needed
         }
     </script>
 
